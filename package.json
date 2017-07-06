@@ -1,0 +1,13 @@
+{
+	"name": "eccemaCy",
+	"version": "0.0.1",
+	"description": "A simple game with mean stack",
+	"main": "server.js",
+	"dependencies": {
+		"body-parser": "^1.17.2",
+		"express": "^4.15.3",
+		"method-override": "^2.3.9",
+		"mongoose": "latest",
+		"morgan": "^1.8.2"
+	}
+}
