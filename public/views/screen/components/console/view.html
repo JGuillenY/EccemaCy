@@ -1,0 +1,6 @@
+<div id="console-screen">
+	<ul id="console-body">
+		<li ng-repeat="log in logs.session">{{log}}</li>
+	</ul>
+	<b id="preprompt">{{prePrompt}}</b><input id="prompt" ng-model="console_input" ng-keypress="console_enter($event)">
+</div>

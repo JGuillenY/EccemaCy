@@ -1,0 +1,31 @@
+<div id="info-screen">
+	<table id="info-body">
+		<tr>
+			<th class="title">{{ship_name|uppercase}}</th>
+		</tr>
+		<tr>
+			<td class="title">Gas:</td>
+			<td>{{gas.current}}/{{gas.max}}</td>
+		</tr>
+		<tr>
+			<td class="title">Battery:</td>
+			<td>{{battery.current}}/{{battery.max}}</td>
+		</tr>
+		<tr>
+			<td class="title">Credits:</td>
+			<td>{{credits}}</td>
+		</tr>
+		<tr>
+			<td class="title">Explorers:</td>
+			<td>{{services.explorer.free}}/{{services.explorer.total}}</td>
+		</tr>
+		<tr>
+			<td class="title">Miners:</td>
+			<td>{{services.miner.free}}/{{services.miner.total}}</td>
+		</tr>
+		<tr>
+			<td class="title">Builders:</td>
+			<td>{{services.builder.free}}/{{services.builder.total}}</td>
+		</tr>
+	</table>
+</div>

@@ -1,0 +1,254 @@
+/*Entire App CSS archive*/
+
+/* ---------------------------- GENERAL RULES ----------------------------*/
+@font-face {
+    font-family: 'eightBits';
+    src: url('../fonts/8bitOperatorPlus8-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'eightBits';
+    src: url('../fonts/8bitOperatorPlus8-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'eightBit';
+    src: url('../fonts/8bitOperatorPlus-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'eightBit';
+    src: url('../fonts/8bitOperatorPlus-Bold.ttf');
+    font-weight: bold;
+}
+
+*{
+	border: none;
+	margin: 0;
+	padding: 0;
+	cursor: url('../img/cursor_default.png'), auto;
+	font-family: 'eightBits';
+}
+
+input, li, td, th{
+	font-size: 1em;
+}
+
+input, li{
+	color: rgba(255,255,255, .7);
+	padding: 5px;
+}
+
+li{
+	list-style: none;
+}
+
+/*---------------------------- MAIN SCREEN RULES ----------------------------*/
+
+div#top-left{
+	position: relative;
+	display: inline-block;
+	top: 0;
+	left: 0;
+	width: 70%;
+	height: 60%;
+	background: rgb(5, 5, 5);
+	border-left: 2px rgba(255,255,255,.1) solid;
+	border-top: 2px rgba(255,255,255,.1) solid;
+}
+
+div#main-screen{
+	
+}
+
+svg#ship{
+	width: 100%;
+	height: 100%;
+}
+
+svg#ship image.ship_part.perfect{
+	filter: hue-rotate(10deg);
+}
+
+svg#ship image.ship_part.fine{
+	filter: hue-rotate(20deg);
+}
+
+svg#ship image.ship_part.caution{
+	filter: hue-rotate(30deg);
+}
+
+svg#ship image.ship_part.damaged{
+	filter: hue-rotate(40deg);
+}
+
+svg#ship image.ship_part.broken{
+	filter: hue-rotate(50deg);
+}
+
+svg#ship image#core{
+		
+}
+
+svg#ship image#l_front{
+	
+}
+
+svg#ship image#l_engine{
+	
+}
+
+svg#ship image#l_wing{
+	
+}
+
+svg#ship image#r_front{ 
+	
+}
+
+svg#ship image#r_engine{
+	
+}
+
+svg#ship image#r_wing{
+	
+}
+
+/*---------------------------- RIGHT PANELS ----------------------------*/
+
+div#top-right{
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	right: 0;
+	width: 30%;
+	height: 60%;
+}
+
+/*---------------------------- INFO SCREEN RULES ----------------------------*/
+
+div#top-right div#info-screen{
+	height: 70%;
+	background: rgb(5, 5, 5);
+	box-sizing: border-box;
+	border: 2px rgba(255,255,255, .1) solid;
+}
+
+table#info-body{
+	width: 90%;
+	position: relative;
+	left: 5%;
+	top: 7.5%;
+}
+
+table#info-body td{
+	width: 50%;
+	color: rgba(255,255,255, .8);
+}
+
+table#info-body th{
+	width:100%;
+	padding-bottom: 7.5%;
+}
+
+table#info-body td.title, table#info-body th.title{
+	font-weight: bold;
+	color: rgba(255,255,255,.8);
+}
+
+/*---------------------------- MENU SCREEN RULES ----------------------------*/
+
+div#top-right div#menu-screen{
+	height: 30%;
+	border-left: 2px rgba(255,255,255, .1) solid;
+	border-right: 2px rgba(255,255,255, .1) solid;
+	background: rgb(5, 5, 5);
+	box-sizing: border-box;
+}
+
+div#top-right div#menu-screen ul{
+	padding: 5%;
+	text-align: center;
+}
+
+div#top-right div#menu-screen ul li.menu-option:first-child{
+	/*margin-bottom: 10%;*/
+}
+
+div#top-right div#menu-screen ul li.menu-option{
+	display: inline-block;
+	height: 78%;
+	padding-top: 7.5%;
+	box-sizing: border-box;
+	border: 2px rgba(255,255,255, .2) solid;
+	width: 47%;
+}
+
+div#top-right div#menu-screen ul li.menu-option img{
+	margin-bottom: 8px;
+	opacity: .8;
+	cursor: url('../img/cursor_pointer.png'), auto;
+}
+
+div#top-right div#menu-screen ul li.menu-option:hover{
+	background: rgba(255,255,255, .8);
+	color: rgb(5,5,5);
+	cursor: url('../img/cursor_pointer.png'), auto;
+}
+
+/*---------------------------- CONSOLE SCREEN RULES ----------------------------*/
+
+div#bottom{
+	width: 100%;
+	height: 40%;
+	display: block;
+	position: absolute;
+	top: 60%;
+}
+
+div#bottom div#console-screen{
+
+}
+
+div#bottom div#console-screen ul#console-body{
+	width: 100%;
+	height: 90%;
+	background: rgb(5,5,5);
+	box-sizing: border-box;
+	border: 2px rgba(255, 255, 255, 0.1) solid;
+}
+
+div#bottom div#console-screen b#preprompt{
+	font-weight: normal;
+	color: rgba(255,255,255, .8);
+	display: inline-block;
+	background: rgb(5,5,5);
+	width: auto;
+	height: 10%;
+	box-sizing: border-box;
+	border-left: 2px rgba(255,255,255,.1) solid;
+	border-bottom: 2px rgba(255,255,255,.1) solid;
+	padding: 5px;
+	padding-top: 6px;
+}
+
+div#bottom div#console-screen input#prompt{
+	height: 10%;
+	width: -moz-available;
+	display: inline-block;
+	box-sizing: border-box;
+	border-bottom: 2px rgba(255,255,255,.1) solid;
+	border-right: 2px rgba(255,255,255,.1) solid;
+	background: rgb(5,5,5);
+	position: absolute;
+	color: rgba(255,255,255, .8);
+
+}
+
+input#prompt::-webkit-input-placeholder{
+    color: red;
+    background: rgba(255,255,255, .8)
+    text-shadow: none;
+    -webkit-text-fill-color: initial;
+}
